@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>our web page by Rachna</title>
+	<meta name="viewport" content = "width=device-width, initial-scale = 1" >
+<!--there is one external css.....named style.css-->
+<!--there is another external css...named vertical.css--> 
+<style>
+	html,body {
+		height: 100%;
+		width: 100% ;
+		margin: 0;
+		padding: 0;
+		}
+
+	.wrap {
+		height: 100%;
+		width : 100%;
+		position: relative;
+		overflow: hidden;
+		background: #120103;
+		color: #fff;
+		text-align: center;
+	}
+
+	header{
+		background: olive;
+		box-shadow: 0.5em 0.3em #111;
+		position : absolute;/*relative,absolute,fixed,stiky*/
+		top : 0;
+		left : 0;
+		z-index: 900;
+		width: 100%;
+	} 
+	header label{
+		color:#fff;
+		cursor: pointer;
+		display: inline-block;
+		line-height: 3em;
+		font-size: 1em;
+		font-weight: bold;
+		padding: 0 4em;
+	}
+
+	header label:hover{
+		background: #6B8E23;
+	}
+
+	.slide{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top:0%;
+		left: 100%;
+		z-index:  10;
+		padding:8em 1em 0;
+		background-color: #120103;
+		background-position: 50% 50%;
+		background-size: cover;
+		transition: left 0s .75s;
+		
+
+	}
+	.slide-one{
+		background-image:url('acad.jpg');
+	}
+	.slide-two{
+		background-image:url('acad1.jpg');
+	}
+	.slide-three{
+		background-image:url('guest.jpg');
+	}
+	.slide-four{
+		background-image:url('Dir.jpg');
+	}
+
+	[id^="slide"]:checked + .slide {
+		left: 0;
+		z-index: 100;
+		-webkit-transition: height 0.5s ease;
+		transition:  left .65s ease;
+		
+	}
+
+	.slide h1{
+		opacity: 0;
+		transform: translateY(100%);
+		transition: transform .5s .5s, opacity .5s;
+
+	}
+
+	[id^="slide"]:checked + .slide h1 {
+		opacity: 10;
+		transform: translateY(0);
+		transition: all .5s .5s;
+	}
+
+	
+	.footer{
+			width: 98.5%;
+			height: 40px;
+			background: Teal;
+			padding: 10px 10px;
+			padding-left: 200px
+			color: #fff;
+			bottom: 0;
+			overflow: hidden;
+			box-shadow: 2em 2em 2em 2em #111;
+		}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+	<header>
+		<center><h1>NORTH EASTERN REGIONAL INSTITUTE OF SCIENCE AND TECHNOLOGY</h1></center>
+		<label for="slide-1-trigger">slide one</label>
+		<label for="slide-2-trigger">slide two</label>
+		<label for="slide-3-trigger">slide three</label>
+		<label for="slide-4-trigger">slide four</label>
+	</header> 
+
+	<input  id="slide-1-trigger" type="radio" name="slides" checked>
+	<section class="slide slide-one">
+		<h1>academic</h1>
+	</section>
+
+	<input id="slide-2-trigger" type="radio" name="slides"  >
+	<section class = "slide slide-two">
+		<h1>exam cell</h1>
+	</section>
+
+	<input id="slide-3-trigger" type="radio" name="slides" >
+	<section class = "slide slide-three">
+		<h1>registration</h1>
+	</section>
+
+	<input id="slide-4-trigger" type="radio" name="slides" >
+	<section class = "slide slide-four">
+		<h1>online help</h1>
+	</section>
+</div>
+
+<div style="background-color:#aaa; height:600px;width:100px;float:left;">
+      <div><b>CONTENTS</b></div>
+      ACADEMIC<br />
+      EXAM CELL<br />
+      ACTIVITY HUB
+  </div>
+
+<div style="background-color:#eee; height:200px; width:800px; float:left;">
+   
+
+<fieldset>
+	<legend><h2>MAIN PAGE</h2></legend>
+	
+	<img src="logo.png" alt="NERIST logo" style="float:left;width:42px;height:42px;;">
+
+	<div><center><h2>North Eastern Regional Institute Of Science And Technology</h2>
+			<h3>(Deemed University)</h3>
+		<h3>Nirjuli ::: Arunachal Pradesh ::: 791109</h3>
+		
+</fieldset>
+
+
+  </div>
+
+  <div style="background-color:#aaa; height:600px;width:100px;float:right;">
+      <div><b>Right Menu</b></div>
+      ACADEMIC<br />
+      EXAM CELL<br />
+      ACTIVITY HUB
+  </div>
+
+
+
+<div class="footer">
+		this is the copyright product of anirban, rachna and abhishek
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.flex-container{
+	display:webkit-flex;
+	display:flex;
+	-webkit-flex-flow:row wrap;
+	text-align:center;
+}
+
+.flex-container>*{
+	padding:15px;
+	-webkit-flex:1 100%;
+	flex:1 100%;
+
+}
+
+
+header{
+background:#669933;color:#660000;
+padding:5%;}
+footer{background:cyan;color:#622569;
+padding:3%;}
+
+.nav{background:#0099CC;
+
+padding-left:1%;
+padding-right:1%;
+padding-top:1%;
+padding-bottom:40%;
+}
+
+.nav ul a{
+text-decoration:none;
+}
+
+
+
+
+
+/*
+@media all and (min-width:768px){
+.nav{text-align:left;-webkit-flex:1 auto;flex:1 auto;-webkit-order:1;order:1;}
+*/
+
+	/* .article{-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+footer{-webkit-order:3;order:3;}
+} */
+
+ul{
+
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background-color:orange;
+}
+li{
+	float:left;
+}
+
+li a{
+
+	display:block;
+	text-align:center;
+	color:blue;
+	padding:10px 60px;
+
+	text-decoration:none;
+	font-size:18px;
+
+}
+
+li a:hover{
+	background-color:blue;
+	color:red;
+
+}
+
+</style>
+</head>
+<body>
+<div class -"flex-container">
+<header>
+<h1><center><b>NORTH EASTERN REGIONAL INSTITUTE OF SCIENCE AND TECHNOLOGY</b><br>Arunachal pradesh,nirjuli.</center></h1>
+</header>
+
+<nav class="nav">
+
+<ul>
+<li><a href="#"><center><b>HOME</b></center></a></li>
+
+<li><a href="#"><center><b>ACADEMIC</b></center></a></li>
+
+<li><a href="#"><center><b>EXAM CELL</center></b></a></li>
+
+<li><a href="#"><center><b>ONLINE FEE PAYMENT</center></b></a></li>
+
+<li><a href="#"><center><b>REGISTRATION</center></b></a></li>
+</ul>
+</nav>
+
+<footer>copywrite &copy;nerist.com</footer>
+</div>
+</body>
+</html>

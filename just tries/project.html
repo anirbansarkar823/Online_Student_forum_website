@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.flex-container{
+	display:webkit-flex;
+	display:flex;
+	-webkit-flex-flow:row wrap;
+	text-align:center;
+}
+
+.flex-container>*{
+	padding:15px;
+	-webkit-flex:1 100%;
+	flex:1 100%;
+
+}
+
+.article{
+	text-align:left;
+}
+
+header{
+background:cyan;color:blue;
+padding:5%;}
+footer{background:yellow;color:green;}
+
+.nav{background:yellow;
+}
+
+.nav ul a{
+text-decoration:none;
+}
+
+.nav ul{
+list-style-type:none;
+padding:5%;
+}
+
+
+@media all and (min-width:768px){
+.nav{text-align:left;-webkit-flex:1 auto;flex:1 auto;-webkit-order:1;order:1;}
+
+	.article{-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+footer{-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+<div class -"flex-container">
+<header>
+<h1><center>nerist online forum</center></h1>
+</header>
+
+<nav class="nav">
+
+<ul>
+<li><a href="#">academic</a></li>
+<li><a href="#">exam cell</a></li>
+<li><a href="#">online fee payment</a></li>
+<li><a href="#">registration</a></li>
+</ul>
+</nav>
+<article class="article">
+<h1>welcome</h1>
+</article>
+<footer>copywrite &copy;nerist.com</footer>
+</div>
+</body>
+</html>

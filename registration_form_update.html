@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+
+<style>
+.fleft{
+	float: left;
+}
+
+.fright{
+	float: right;
+}
+
+
+
+</style>
+</head>
+
+<body>
+    <form method="post" action="update_registration_form.php">
+	<fieldset>
+	<legend><h2>Registration Form</h2></legend>
+	
+	<img src="logo2.png" alt="NERIST logo" style="float:left;width:72px;height:92px;">
+
+	<div><center><h2>North Eastern Regional Institute Of Science And Technology</h2>
+			<h3>(Deemed University)</h3>
+		<h3>Nirjuli ::: Arunachal Pradesh ::: 791109</h3>
+		<h4><u>SEMESTER COURSE REGISTRATION FORUM FOR UNDER GRADUATE COURSES</u></h4>
+        </center>
+        </div>
+	</fieldset>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<fieldset>
+	<legend><h3>Filling section</h3></legend>
+    <select>
+        <option value="1" name="what_are_u">Regular</option>
+		<option value="2" name="what_are_u">Repeater</option>
+		<option value="3" name="what_are_u">Lateral</option>
+		<option value="4" name="what_are_u">Vertical</option>
+	</select><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<label >Full Name of Student:</label><br /> 
+	<input type = "text"  name="name"  size="100" placeholder = "enter your name"> <br /><br />
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	<div class="fleft">
+	Choose your module:<br>
+	<label>
+	<input list="namelist" size = "20" name="module" placeholder = "enter module" /></label>
+	
+	<datalist id="namelist">
+		<option value = "DIPLOMA">
+		<option value="DEGREE">
+		<option value="BASE">
+	</datalist>
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Registration Number:</label><br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<input type="number" value=" " name="registration_number" size ="50" maxlength="6" placeholder="enter regd. number" pattern="[0-9]{6}"><br /><br />
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Year:</label>
+	<select name="year">
+		<option value="1">1st year</option>
+		<option value="2">2nd year</option>
+		
+	</select><br><br>
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class = "fright">
+	<label>Roll No.</label><br>
+	<input type="text" size="50" placeholder="enter roll number" name="roll_number">	
+	</div>
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+
+	<div class ="fleft">
+	<label>Semester:&nbsp;&nbsp;</label>
+
+	<label>
+		<input type = "radio" value="1st" name="semester">1st
+	</label>
+
+	<label>
+		<input type = "radio" value = "2nd" name = "semester">2nd
+	</label>	
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class = "fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Session: &nbsp;&nbsp;</label>
+	
+	<input type="month" name="session">
+	<label> to </label>
+	<input type ="month">
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	<div class = "fright">
+	<label>Department:&nbsp;&nbsp;</lable>
+	<select name="department">
+		<option value="1">Agricultural Engineering</option>
+		<option value="2">Civil Engineering</option>
+		<option value="3">Computer Science & Engineering</option>
+		<option value="4">Electrical Engineering</option>
+		<option value = "5">Mechanical Engineering</option>
+		<option value = "6">Chemistry</option>
+		<option value = "7">Mathematics</option>
+		<option value = "8">Physics</option>
+		<option value = "9">Humanities And Social Sciences</option>
+	</select>
+	</div>
+
+	<br><br>	
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class = "fleft">
+	<label>Sex:<br></lable>
+	<select name="sex">
+		<option value="1">Female</option>
+		<option value="2">Male</option>
+		<option value="3">Other</option>
+	</select>
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class = "fleft">
+	<label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Category:<br></label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<select name="category">
+		<option value="1">General</option>
+		<option value="2">OBC</option>
+		<option value="3">SC</option>
+		<option value="4">ST</option>
+	</select>
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	<div class="fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+	Hostel Block:<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input list="blclist" name="hostel_block" size = "2"  /></label>
+	
+	<datalist id="blclist" name="hostel_block">
+		<option value = "A">
+		<option value = "B">
+		<option value = "C">
+		<option value = "D">
+		<option value = "E">
+		<option value = "F">
+		<option value = "G">
+		<option value = "H">
+	</datalist>
+	</div>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+	
+	<div class = "fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+				
+	Room Number:</label><br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text"  name="room_number" size ="5" maxlength="3"  pattern="[0-9]{4}"><br /><br />
+	</div>
+
+	<div class ="fleft">
+		<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	
+		State:</label><br >
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
+		<input list="state" size="15" name="state" />
+
+		<datalist id="state">
+			<option value = "Arunachal Pradesh">
+			<option value = "Assam">
+			<option value = "Bihar"> 
+			<option value = "Chattisgarh">
+			<option value = "Gujrat">
+			<option value = "Jharkhand">
+			<option value = "Karnataka">
+			<option value = "kerala">
+			<option value = "Madhya Pradesh">
+			<option value = "Manipur">
+			<option value = "Meghalaya">
+			<option value = "Mizoram">
+			<option value = "Maharastra">
+			<option value = "Nagaland">
+			<option value = "Haryana">
+			<option value = "Jammu & Kashmir">
+			<option value = "Goa">
+			<option value = "Punjab">
+			<option value = "Rajastan">
+			<option value = "Delhi">
+			<option value = "Himachal Pradesh">
+			<option value = "Uttar Pradesh">
+			<option value = "Uttaranchal">
+			<option value = "West Bengal">
+			<option value = "Sikkim">
+			<option value = "Tripura">
+			<option value = "Telangana">
+			<option value = "Andhra Pradesh">
+			<option value = "Tamil Nadu">
+			<option value = "Orissa">
+
+		</datalist>
+	</div>
+
+
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+	<div class = "fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Student's Mobile No:</label><br />
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+	<input type="number" value=" " name="student_mobile_number" size ="50" maxlength="10" placeholder="enter mobile number" pattern="[0-9]{10}"><br /><br />
+	</div>
+
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+
+	<div class ="fleft">
+	<label>Date of birth:<br /></label>
+
+	<label>
+		<input type = "date" name = "dob" >
+	</label>
+	
+	</div>
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Mother's Name:</label><br />
+	<input type="text" value=" " name="mother_name" size ="30" placeholder="enter mother's name">
+	</div>
+
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Father's Name:</label><br />
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="text" value=" " name="father_name" size ="30"  placeholder="enter father's name">
+	</div>
+
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Mobile No.:</label><br />
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" value=" " name="father_mobile_number" size ="50" maxlength="10" placeholder="enter mobile number" pattern="[0-9]{10}"><br /><br />
+	</div>
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;
+
+	Communication Address Of Parents/Gurdian:(Vill.):</label><br />
+	<input type="text" value=" " name="parent_address" size ="50" placeholder="enter mother's name">
+	</div>
+
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	P.O.</label><br />
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" value=" " name="post_office" size ="50" maxlength="10" placeholder="enter your P.O." pattern="[0-9]{10}"><br /><br />
+	</div>
+
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	P.S.</label><br />
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" value=" " name="police_station" size ="50" maxlength="10" placeholder="enter your P.S." pattern="[0-9]{10}"><br /><br />
+	</div>
+
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	District:</label><br />
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="number" value=" " name="district" size ="50" maxlength="10" placeholder="enter your District" pattern="[0-9]{10}"><br /><br />
+	</div>
+
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+	<div class = "fleft">
+	<label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	Pin code:</label><br />
+	<input type="text" value=" " name="pincode" size ="30" placeholder="enter mother's enter">
+	</div>
+
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+<fieldset>
+	<legend><h3>Regular Courses Registered</h3></legend>
+	<div style="padding-left:250px; display:block; margin:0 auto;">
+                                                                  
+	<table border="10">
+		<tr>
+			<th>Course Code</th>
+			<th colspan="3">Title</th>
+			<th>L</th>
+			<th>T</th>
+			<th>P</th>
+			<th>Credit</th>
+			<th>Co-ordinator</th>
+			<th>Remarks</th>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="course_code1" size="8"></td>
+			<td colspan="3"><input type="text" name="course_code1_title" size="18"></td>
+			<td><input type="text" name="course_code1_L1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code1_T1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code1_P1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code1_C1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code1_co_ordinator1" size="8"></td>
+			<td><input type="text" name="course_code1_remarks1" size="8"></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="course_code2" size="8"></td>
+			<td colspan="3"><input type="text" name="course_code2_title" size="18"></td>
+			<td><input type="text" name="course_code2_L2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code2_T2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code2_P2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code2_C2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code2_co_ordintr2" size="8"></td>
+			<td><input type="text" name="course_code2_remarks2" size="8"></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="course_code3" size="8"></td>
+			<td colspan="3"><input type="text" name="course_code3_title" size="18"></td>
+			<td><input type="text" name="course_code3_L3" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code3_T3" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code3_P3" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code3_C3" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code3_co_ordintr3" size="8"></td>
+			<td><input type="text" name="course_code3_remarks3" size="8"></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="course_code4" size="8"></td>
+			<td colspan="3"><input type="text" name="course_code4_title" size="18"></td>
+			<td><input type="text" name="course_code4_L4" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code4_T4" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code4_P4" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code4_C4" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code4_co_ordintr4" size="8"></td>
+			<td><input type="text" name="course_code4_remarks4" size="8"></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="course_code5" size="8"></td>
+			<td colspan="3"><input type="text" name="course_code5_title" size="18"></td>
+			<td><input type="text" name="course_code5_L5" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code5_T5" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code5_P5" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code5_C5" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code5_Co_ordintr5" size="8"></td>
+			<td><input type="text" name="course_code5_remarks5" size="8"></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="course_code6" size="8"></td>
+			<td colspan="3"><input type="text" name="course_code6_title" size="18"></td>
+			<td><input type="text" name="course_code6_L6" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code6_T6" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code6_P6" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code6_C6" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code6_Co_ordintr6" size="8"></td>
+			<td><input type="text" name="course_code6_remarks6" size="8"></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="course_code7" size="8"></td>
+			<td colspan="3"><input type="text" name="course_code7_title" size="18"></td>
+			<td><input type="text" name="course_code7_L7" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code7_T7" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code7_P7" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code7_C7" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="course_code7_Co_ordintr7" size="8"></td>
+			<td><input type="text" name="course_code7_remarks7" size="8"></td>
+		</tr>
+
+		<tr>
+			<td colspan="14">Totol Credit=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<input type="text" name="total" pattern="[0=9]{2}" size="3"></td>
+		</tr>
+	</table>
+	</div>
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+	
+<fieldset>
+	<legend><h3>Repeat Course(s) Registered:</h3></legend>
+	<div style="padding-left:250px;display:block;margin:0 auto;">
+	<table border="1">
+		<tr>
+			<th>Course Code</th>
+			<th colspan="3">Title</th>
+			<th>L</th>
+			<th>T</th>
+			<th>P</th>
+			<th>Credit</th>
+			<th>Co-ordinator</th>
+			<th>Remarks</th>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="Rcourse_code1" size="8"></td>
+			<td colspan="3"><input type="text" name="Rcourse_code1_title" size="18"></td>
+			<td><input type="text" name="Rcourse_code1_L1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code1_T1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code1_P1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code1_C1" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code1_co_ordinator1" size="8"></td>
+			<td><input type="text" name="Rcourse_code1_remarks1" size="8"></td>
+		</tr>
+
+		<tr>
+			<td><input type="text" name="Rcourse_code2" size="8"></td>
+			<td colspan="3"><input type="text" name="Rcourse_code2_title" size="18"></td>
+			<td><input type="text" name="Rcourse_code2_L2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code2_T2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code2_P2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code2_C2" size="1" pattern="[0-9]{1}"></td>
+			<td><input type="text" name="Rcourse_code2_co_ordinator2" size="8"></td>
+			<td><input type="text" name="Rcourse_code2_remarks2" size="8"></td>
+		</tr>
+
+
+		<tr>
+			<td colspan="14">Totol Credit=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<input type="text" name="Rtotal" pattern="[0=9]{2}" size="3"></td>
+		</tr>
+	</table>
+	</div>
+	
+	</fieldset>
+	
+</fieldset>
+
+</fieldset>
+
+<br><br><br><br>
+<!--  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->	
+
+	<input type="submit" name="submit_Button"  style="font-size:14pt;color:white;background-color:aqua;border:2px solid #336600;padding:3px;" >
+	<input type="reset" name="reset_button"  style="float:right; font-size:14pt;color:white;background-color:#E74C3C;border:2px solid #641E16; padding:3px; ">
+
+    
+</form>
+</body>
+</html>

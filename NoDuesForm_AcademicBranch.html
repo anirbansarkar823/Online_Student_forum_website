@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+.header, .footer {
+    background-color: grey;
+    color: white;
+    padding: 15px;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.menu {
+    width: 25%;
+}
+.content {
+    width: 75%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+#fixedbutton1 {
+    position: absolute;
+    bottom: -60px;
+    right: 50px; 
+}
+
+#fixedbutton2 {
+    position: absolute;
+    bottom: -60px;
+    left: 380px; 
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <fieldset>
+  <legend><h2>Academic Branch</h2></legend>
+  
+  <img src="logo2.png" alt="NERIST logo" style="float:left;width:42px;height:42px;">
+
+  <div><center><h2>North Eastern Regional Institute Of Science And Technology</h2>
+      <h3>(Deemed University)</h3>
+    <h3>Nirjuli ::: Arunachal Pradesh ::: 791109</h3>
+    <h4><u>SEMESTER COURSE REGISTRATION FORUM FOR UNDER GRADUATE COURSES</u></h4>
+</fieldset>
+
+</div>
+
+<div class="clearfix">
+  <div class="column menu">
+    <ul>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_Teachergymkhana.html">Gymkhana</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_Library.html">Library</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_BookBank.html">Book Bank</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_HMC.html">HMC</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_NCC.html">NCC</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_NSS.html">NSS</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_Department.html">Department</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_ExamCell.html">Exam cell</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_CourseAdvisor.html">Course Advisor</a></li>
+      <li><a href="http://localhost/web%20technology%20project/NoDuesForm_AcademicBranch.html">Academic Branch</a></li>
+
+    </ul>
+  </div>
+
+  <div class="column content">
+  <div style="padding-left:200px;display:block;margin:0 auto;">
+<!--<fieldset style="display:inline-block;">-->
+  <fieldset style="width:500px">
+  <legend><h3>For Official use</h3></legend>
+  <div style="padding-left:120px;display:block;margin:0 auto;">
+  <table border="1">
+    <tr>
+
+      <td colspan="14">Any issue=
+&nbsp&nbsp&nbsp
+<textarea name="any_issue"  disabled></textarea></td>
+
+    </tr>
+
+    <tr>
+      <td colspan="14">Everything cleared: &nbsp; &nbsp;
+        <input type="checkbox" name="cleared_hmc" disabled></td>
+      </tr>
+  </table>
+  </div>
+  </fieldset>
+</div>
+<br><br><br><br>
+
+    
+   <button id="fixedbutton1"  name="next10" onclick="location.href='file:///G:/web%20technology%20project/NoDuesForm_CourseAdvisor.html';" style="font-size:14pt;cursor:wait;" >&nbsp;&nbsp;  NEXT  &nbsp;&nbsp;</button>
+    <button id="fixedbutton2"  name="prev10" onclick="file:///G:/web%20technology%20project/NoDuesForm_Department.html';" style="font-size:14pt;cursor:wait;" >&nbsp;&nbsp;  PREVIOUS  &nbsp;&nbsp;</button>
+   
+ </div>
+    </div>
+
+
+
+<div class="footer">
+  <p><center>copyright &copy;nerist.ac.in</center></p>
+</div>
+
+
+</body>
+</html>

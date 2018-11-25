@@ -1,0 +1,585 @@
+;
+(function ($) {
+$("#block-nerist-main-menu>ul").append('<li class="hassub only-mobile"><a href="">More</a><ul class="menu dropdown-menu">'+$("#block-homemenu1-3 ul").html()+'</ul></li>');
+
+    jQuery('#camera_wrap_1').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '../images/',
+        fx: 'mosaicSpiral',
+        height: 'auto',
+        time: 4000,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_2').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        bypassCache: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollHorz',
+        height: '186',
+        time: 4000,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_3').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        bypassCache: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'mosaicSpiral',
+        height: '527',
+        time: 4000,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_4').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 200,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('.short_code_slider').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 150,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_6').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 200,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_7').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 250,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_8').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 200,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_9').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 250,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_10').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 200,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_11').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 200,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_12').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 200,
+        pagination: false,
+        navigationHover: false
+
+    });
+    jQuery('#camera_wrap_13').camera({
+        //height: 'auto',
+        loader: 'none',
+        thumbnails: false,
+        hover: false,
+        opacityOnGrid: false,
+        imagePath: '{{ base_path ~ directory }}/images/',
+        fx: 'scrollRight',
+        height: '200',
+        time: 200,
+        pagination: false,
+        navigationHover: false
+
+    });
+//    jQuery('#camera_wrap_14').camera({
+//        //height: 'auto',
+//        loader: 'none',
+//        thumbnails: false,
+//        hover: false,
+//        opacityOnGrid: false,
+//        imagePath: '{{ base_path ~ directory }}/images/',
+//        fx: 'scrollRight',
+//        height: '200',
+//        time: 200,
+//        pagination: false,
+//        navigationHover: false
+//
+//    });
+//    jQuery('#camera_wrap_15').camera({
+//        //height: 'auto',
+//        loader: 'none',
+//        thumbnails: false,
+//        hover: false,
+//        opacityOnGrid: false,
+//        imagePath: '{{ base_path ~ directory }}/images/',
+//        fx: 'scrollRight',
+//        height: '200',
+//        time: 200,
+//        pagination: false,
+//        navigationHover: false
+//
+//    });
+//    jQuery('#camera_wrap_16').camera({
+//        //height: 'auto',
+//        loader: 'none',
+//        thumbnails: false,
+//        hover: false,
+//        opacityOnGrid: false,
+//        imagePath: '{{ base_path ~ directory }}/images/',
+//        fx: 'scrollRight',
+//        height: '200',
+//        time: 200,
+//        pagination: false,
+//        navigationHover: false
+//
+//    });
+
+
+    jQuery('.shotcode_slider.owl').owlCarousel({
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        smartSpeed: 500,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                loop: jQuery('.shotcode_slider.owl').children().length > 1
+            },
+        }
+    });
+    jQuery('#block-views-block-announcements-list-block-1 .owl-carousel').owlCarousel({
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        smartSpeed: 500,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                loop: jQuery('.owl-carousel').children().length > 1
+            },
+        }
+    })
+
+    jQuery('.owl-carousel2').owlCarousel({
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        smartSpeed: 500,
+        dots: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                loop: true
+            },
+        }
+    })
+    jQuery('.owl-carousel3').owlCarousel({
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        smartSpeed: 700,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1,
+                nav: true,
+                loop: true
+            },
+        }
+    })
+    jQuery(document).ready(function ($) {
+        jQuery('header nav#block-nerist-main-menu').slicknav();
+        //var w = window.width();
+
+        $('.courselist > li.hassub > a').click(function (e) {
+            e.preventDefault();
+            var ullist = $(this).parent().children('ul:first');
+            $(this).parent('li').toggleClass("listclosed");
+            ullist.slideToggle();
+        });
+
+        jQuery("#quicklinks").click(function () {
+            jQuery(".expandable").toggleClass("expand");
+        });
+    });
+
+    jQuery(window).load(function ($) {
+        var h1 = jQuery(".left-sidebar").outerHeight();
+        var h2 = jQuery(".main-copy").outerHeight();
+//        if (h1 < h2)
+//        {
+//            jQuery(".left-sidebar").height(h2 - 49);
+//        }
+        if (h2 < h1)
+        {
+            jQuery(".main-copy").height(h1 + 49);
+        }
+    }).resize();
+
+    var ww = jQuery(window).width();
+    if (ww > 780) {
+        $(document).scroll(function () {
+            // t = (100 - $(this).scrollTop())/100;
+            t = $(this).scrollTop();
+            //alert(t);
+            if (t > 80)
+            {
+
+                //$('#header').css({opacity: t})
+                //$('header').fadeIn(1000);
+                $('header').addClass("bg_style");
+                $('.banner-mc').addClass("changed-top");
+                $('.banner-area').addClass("changed-top");
+                $('.banner').addClass("changed-top");
+                $('.nav_outer nav#block-homemenu1-2, header .nav_outer #block-searchform-3').css("display", "none");
+
+
+            } else
+            {
+                $('.banner-area').removeClass("changed-top");
+                $('header').removeClass("bg_style");
+                $('.banner-mc').removeClass("changed-top");
+                $('.banner').removeClass("changed-top");
+                $('.nav_outer nav#block-homemenu1-2, header .nav_outer #block-searchform-3').css("display", "block");
+
+            }
+        });
+    }
+
+
+})(jQuery);
+
+Shadowbox.init({
+    overlayOpacity: 0.9,
+    displayNav: true,
+    autoplayMovies: true
+});
+jQuery(document).ready(function ($) {
+
+$("#block-nerist-main-menu ul.menu").css('maxHeight',$(window).height());
+    var re = /^(https?:\/\/[^\/]+).*$/;
+    var currentHref = window.location.href.replace(re, '$1');
+    
+    var reLocal = new RegExp('^' + currentHref.replace(/\./, '\\.'));
+    $(".no-click a").click(function (e) {
+        e.preventDefault();
+    });
+
+//    var links = $("a");
+//    $("a").each(function () {
+//
+//        var href = links[i].href;
+//        if (href == '' || reLocal.test(href) || !/^http/.test(href))
+//                continue
+//           
+//        if (links[i].className != undefined)
+//        {
+//            links[i].className += ' AddedClass';
+//        }
+//
+//
+//    });
+
+    //Horizontal Tab
+    $('#parentHorizontalTab').easyResponsiveTabs({
+        type: 'accordion', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+            var $tab = $(this);
+            var $info = $('#nested-tabInfo');
+            var $name = $('span', $info);
+            $name.text($tab.text());
+            $info.show();
+        }
+    });
+
+
+    $("img.popup").click(function (e) {
+        e.preventDefault();
+        $('.bpopup_box').bPopup({
+            content: 'image', //'ajax', 'iframe' or 'image'
+            loadUrl: $(this).attr('src')
+        });
+    });
+
+
+
+    $('#parentHorizontalTab2').easyResponsiveTabs({
+        type: 'default', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+            var $tab = $(this);
+            var $info = $('#nested-tabInfo');
+            var $name = $('span', $info);
+            $name.text($tab.text());
+            $info.show();
+        }
+    });
+    // $('#parentHorizontalTab3').easyResponsiveTabs({
+    //     type: 'default', //Types: default, vertical, accordion
+    //     width: 'auto', //auto or any width like 600px
+    //     fit: true, // 100% fit in a container
+    //     tabidentify: 'hor_1', // The tab groups identifier
+    //     activate: function (event) { // Callback function if tab is switched
+    //         var $tab = $(this);
+    //         var $info = $('#nested-tabInfo');
+    //         var $name = $('span', $info);
+    //         $name.text($tab.text());
+    //         $info.show();
+    //     }
+    // });
+
+
+ $('#accordion_id').easyResponsiveTabs({
+        type: 'accordion', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+            var $tab = $(this);
+            var $info = $('#nested-tabInfo');
+            var $name = $('span', $info);
+            $name.text($tab.text());
+            $info.show();
+        }
+    });
+ $('#accordion_fac').easyResponsiveTabs({
+        type: 'accordion', //Types: default, vertical, accordion
+        width: 'auto', //auto or any width like 600px
+        fit: true, // 100% fit in a container
+        tabidentify: 'hor_1', // The tab groups identifier
+        activate: function (event) { // Callback function if tab is switched
+            var $tab = $(this);
+            var $info = $('#nested-tabInfo');
+            var $name = $('span', $info);
+            $name.text($tab.text());
+            $info.show();
+        }
+    });
+ 
+    // $('.events').bxSlider({
+    //     mode: 'vertical',
+    //     slideMargin: 10,
+    //     minSlides: 4,
+    //     auto: true,
+    // });
+
+    $('#block-homelatestevents > div').last().bxSlider({
+        mode: 'vertical',
+        slideMargin: 0,
+        autoHover: true,
+        minSlides: 7,
+        auto: true,
+        startSlide:4, 
+        speed: 1000,
+    });
+    $('.news_updates .arrow_list').bxSlider({
+        mode: 'vertical',
+        slideMargin: 0,
+        minSlides: 5,
+        autoHover: true,
+       // speed: 200,
+        auto: true,
+    });
+    $('.announcements ul').bxSlider({
+        mode: 'vertical',
+        slideMargin: 0,
+        minSlides: 5,
+         autoHover: true,
+       // speed: 200,
+        auto: true,
+    }); 
+});
+ jQuery('.events').owlCarousel({
+        margin: 0,
+        autoplay: true,
+        responsiveClass: true,
+        smartSpeed: 500,
+        dots: false,
+        items: 2,
+          responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                loop: true
+            },
+            780: {
+                items: 2,
+                nav: false,
+                loop: true
+            },
+        }
+    })
+
+// $(document).ready(function() {
+
+//     $('#left_sidebar').stickySidebar({
+//         sidebarTopMargin: 20,
+//         footerThreshold: 100
+//     });
+
+// });
+var w = jQuery(window).width();
+if (w > 1200) {
+    jQuery("#left_sidebar").stick_in_parent({offset_top:100});
+}
+
+    jQuery(document).ready(function () {
+        //Horizontal Tab
+        jQuery('#parentHorizontalTab3').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion
+            width: 'auto', //auto or any width like 600px
+            fit: true, // 100% fit in a container
+            tabidentify: 'hor_1', // The tab groups identifier
+            activate: function (event) { // Callback function if tab is switched
+                var $tab = $(this);
+                var $info = $('#nested-tabInfo');
+                var $name = $('span', $info);
+                $name.text($tab.text());
+                $info.show();
+                jQuery('.scroll-pane').each(function () {
+                    jQuery(this).jScrollPane({
+                        showArrows: $(this).is('.arrow')
+                    });
+                    var api = $(this).data('jsp');
+                    var throttleTimeout;
+                    jQuery(window).bind('resize', function () {
+                        if (!throttleTimeout) {
+                            throttleTimeout = setTimeout(function () {
+                                api.reinitialise();
+                                throttleTimeout = null;
+                            }, 50
+                                    );
+                        }
+                    });
+                });
+            }
+        });
+        jQuery('.scroll-pane').jScrollPane();
+    });
+jQuery('.programs_sub').children('a').each(function () {
+    var currentUrl = window.location.href;
+    var href = jQuery(this).attr('href');
+   
+   var basePath = window.location.origin;
+   if(basePath+href==currentUrl){
+       jQuery(this).addClass('active');
+   }
+});
+
+
+jQuery(".menu.courselist a[href$='/faculties']").addClass('dep_ppl');
+jQuery("#department_title span").html(jQuery("#department_title span").text().replace(/of/ig,'of <br />'));
+
+jQuery('.content-area .main-copy table').not(".faculty_list table,.content.copy.academic table,.content-area .main-copy .copy.teqp.ir table").stacktable({hideOriginal:true});
+
+if (jQuery(window).width() < 780) {
+jQuery( ".expandable" ).click(function() {
+  jQuery( "ul.courselist" ).slideToggle( "slow", function() {
+  });
+});
+}
